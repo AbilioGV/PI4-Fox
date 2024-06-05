@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PagamentoActivity"
+    android:background="#F9A80C">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/totalValueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textSize="18sp"
+                android:gravity="center_horizontal"
+                android:minHeight="48dp"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/cardNumberInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/card_number"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/cardExpirationInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/card_expiration"
+                android:inputType="date"
+                android:minHeight="48dp"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/cardCVCInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/cvc"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:layout_marginBottom="16dp" />
+
+            <RadioGroup
+                android:id="@+id/addressRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/finishPaymentButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/finish_payment"
+                android:backgroundTint="#000000"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
